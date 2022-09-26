@@ -86,7 +86,7 @@ async function getNeighbours(border) {
     let neighbourList = [];
 
     neighbours.forEach((n) => {
-        neighbourList.push(`<div class="card col col-6 col-lg-3 p-2 neighbour">
+        neighbourList.push(`<div class="card col col-6 col-lg-3 p-2 neighbour">Neighbour
         <img class="card-img-top" src="${n.flag}" alt="flag">
         <div class="card-body">
             <h4 class="card-title">${n.name}</h5>
