@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="text-center pt-2">Flag App</h1>
+
+    <div class="input-section container d-flex justify-content-center pt-4">
+        <div class="row justify-content-center">
+            <div class="col align-self-center">
+                <input id="input" type="text">
+            </div>
+            <div class="col align-self-center">
+                <button class="btn btn-primary" id="search">Search</button>
+                <button class="btn btn-danger" id="clear">Clear</button>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="container countries">
+
+            <div class="container main-country">
+                <!-- <div class="row justify-content-center pt-5">
+                    <div class="card col col-6 col-lg-3 p-2">
+                        <img class="card-img-top" src="https://flagcdn.com/w320/tw.png" alt="flag">
+                        <div class="card-body">
+                            <h4 class="card-title">Taiwan</h5>
+                                <p class="card-text">Asia</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><i class="fas fa-2x fa-landmark"></i> Taipei</li>
+                            <li class="list-group-item"><i class="fas fa-lg fa-users"></i> 100 M</li>
+                            <li class="list-group-item"><i class="fas fa-lg fa-comments"></i> Mandarin</li>
+                            <li class="list-group-item"><i class="fas fa-lg fa-money-bill-wave"></i> Currency</li>
+                        </ul>
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="row container neighbours">
+                <!-- <div class="card col col-6 col-lg-3 p-2 neighbour">
+                    <img class="card-img-top" src="https://flagcdn.com/w320/tw.png" alt="flag">
+                    <div class="card-body">
+                        <h4 class="card-title">Taiwan</h5>
+                            <p class="card-text">Asia</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><i class="fas fa-2x fa-landmark"></i> Taipei</li>
+                        <li class="list-group-item"><i class="fas fa-lg fa-users"></i> 100 M</li>
+                        <li class="list-group-item"><i class="fas fa-lg fa-comments"></i> Mandarin</li>
+                        <li class="list-group-item"><i class="fas fa-lg fa-money-bill-wave"></i> Currency</li>
+                    </ul>
+                </div>
+                <div class="card col col-6 col-lg-3 p-2 neighbour">
+                    <img class="card-img-top" src="https://flagcdn.com/w320/tw.png" alt="flag">
+                    <div class="card-body">
+                        <h4 class="card-title">Taiwan</h5>
+                            <p class="card-text">Asia</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><i class="fas fa-2x fa-landmark"></i> Taipei</li>
+                        <li class="list-group-item"><i class="fas fa-lg fa-users"></i> 100 M</li>
+                        <li class="list-group-item"><i class="fas fa-lg fa-comments"></i> Mandarin</li>
+                        <li class="list-group-item"><i class="fas fa-lg fa-money-bill-wave"></i> Currency</li>
+                    </ul>
+                </div>
+                <div class="card col col-6 col-lg-3 p-2 neighbour">
+                    <img class="card-img-top" src="https://flagcdn.com/w320/tw.png" alt="flag">
+                    <div class="card-body">
+                        <h4 class="card-title">Taiwan</h5>
+                            <p class="card-text">Asia</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><i class="fas fa-2x fa-landmark"></i> Taipei</li>
+                        <li class="list-group-item"><i class="fas fa-lg fa-users"></i> 100 M</li>
+                        <li class="list-group-item"><i class="fas fa-lg fa-comments"></i> Mandarin</li>
+                        <li class="list-group-item"><i class="fas fa-lg fa-money-bill-wave"></i> Currency</li>
+                    </ul>
+                </div>
+                <div class="card col col-6 col-lg-3 p-2 neighbour">
+                    <img class="card-img-top" src="https://flagcdn.com/w320/tw.png" alt="flag">
+                    <div class="card-body">
+                        <h4 class="card-title">Taiwan</h5>
+                            <p class="card-text">Asia</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><i class="fas fa-2x fa-landmark"></i> Taipei</li>
+                        <li class="list-group-item"><i class="fas fa-lg fa-users"></i> 100 M</li>
+                        <li class="list-group-item"><i class="fas fa-lg fa-comments"></i> Mandarin</li>
+                        <li class="list-group-item"><i class="fas fa-lg fa-money-bill-wave"></i> Currency</li>
+                    </ul>
+                </div>
+                <div class="card col col-6 col-lg-3 p-2 neighbour">
+                    <img class="card-img-top" src="https://flagcdn.com/w320/tw.png" alt="flag">
+                    <div class="card-body">
+                        <h4 class="card-title">Taiwan</h5>
+                            <p class="card-text">Asia</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><i class="fas fa-2x fa-landmark"></i> Taipei</li>
+                        <li class="list-group-item"><i class="fas fa-lg fa-users"></i> 100 M</li>
+                        <li class="list-group-item"><i class="fas fa-lg fa-comments"></i> Mandarin</li>
+                        <li class="list-group-item"><i class="fas fa-lg fa-money-bill-wave"></i> Currency</li>
+                    </ul>
+                </div> -->
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
