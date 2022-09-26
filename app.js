@@ -10,7 +10,7 @@
 const input = document.querySelector("#input");
 const search = document.querySelector("#search");
 const clear = document.querySelector("#clear");
-const error = document.querySelector(".input-section");
+const error = document.querySelector(".error-section");
 
 const mainCountry = document.querySelector(".main-country");
 const nCountries = document.querySelector(".neighbours");
@@ -26,16 +26,15 @@ clear.addEventListener("click", () => {
 
 async function getCountry(name) {
     let apiFetch = await fetch(`https://restcountries.com/v3.1/name/${name}`);
-    // .then(function (response) {
-    //     if (!response.ok) {
-    //         let message = error.appendChild(document.createElement("div"));
-    //         message.classList.add("alert", "alert-danger", "alert-container");
-    //         message.innerHTML = `${response}`;
-    //         setTimeout(() => {
-    //             document.getElementsByClassName("alert").remove();
-    //         }, 2000);
-    //     }
-    // });
+    console.log(apiFetch);
+
+    if (!apiFetch.ok) {
+        error.innerHTML = `<div class="alert alert-danger alert-container text-center">Error: Missing Country</div>`;
+        setTimeout(() => {
+            error.innerHTML = "";
+        }, 2000);
+        return;
+    }
 
     let country = await apiFetch.json();
 
@@ -68,6 +67,11 @@ async function getCountry(name) {
 
     let border = country[0].borders;
     if (!border) {
+        error.innerHTML = `<div class="alert alert-danger alert-container text-center">No Bordering Countries</div>`;
+        setTimeout(() => {
+            error.innerHTML = "";
+        }, 2000);
+        nCountries.innerHTML = "";
         return;
     }
 
