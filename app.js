@@ -107,8 +107,8 @@ async function getNeighbours(border) {
             } ${n.currencies[0].symbol}</li>
         </ul>
     </div>`);
-        nCountries.innerHTML = neighbourList.join("");
     });
+    nCountries.innerHTML = neighbourList.join("");
 }
 
 getCountry("canada");
